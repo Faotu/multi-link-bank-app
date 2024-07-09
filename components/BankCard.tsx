@@ -21,14 +21,14 @@ const BankCard = ({
             </p>
           </div>
 
-          <article className="flex flex-col gap-2">
+          <article className="flex flex-col gap-0">
             <div className="flex justify-between">
               <h1 className="text-12 font-semibold text-white">{userName}</h1>
-              <h2 className="text-12 font-semibold text-white">** / **</h2>
+              <h2 className="text-12 font-semibold text-white">●● / ●●</h2>
             </div>
             <p className="text-14 font-semibold tracking-[1.1px] text-white">
-              **** **** **** ****
-              <span className="text-16 ">{account.mask}</span>
+              ●●●● ●●●● ●●●● ●●●●
+              <span className="text-16 ">1234</span>
             </p>
           </article>
         </div>
@@ -40,6 +40,7 @@ const BankCard = ({
             width={45}
             height={32}
             alt="mastercard"
+            className="ml-5"
           />
         </div>
         <Image
