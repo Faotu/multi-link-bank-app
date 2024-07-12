@@ -355,6 +355,14 @@
     @apply flex flex-1 flex-col justify-center;
   }
 
+  .footer_name-desktop {
+    @apply flex size-10 items-center justify-center rounded-full bg-gray-200;
+  }
+
+  .footer_email-desktop {
+    @apply flex flex-1 flex-col justify-center;
+  }
+
   .footer_image {
     @apply relative size-5 max-xl:w-full max-xl:flex max-xl:justify-center max-xl:items-center;
   }
