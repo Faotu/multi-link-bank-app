@@ -186,7 +186,7 @@ const AuthForm = ({ type }: { type: string }) => {
                       Loading...
                     </>
                   ) : type === "sign-in" ? (
-                    "Sign Un"
+                    "Sign In"
                   ) : (
                     "Sign Up"
                   )}
