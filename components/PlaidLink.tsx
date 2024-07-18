@@ -5,7 +5,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
   return (
     <>
       {variant === "primary" ? (
-        <Button>Connect Bank</Button>
+        <Button className="plaidlink-primary">Connect Bank</Button>
       ) : variant === "ghost" ? (
         <Button>Connect Bank</Button>
       ) : (
