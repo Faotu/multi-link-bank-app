@@ -69,7 +69,7 @@ export const formatDateTime = (dateString: Date) => {
 export function formatAmount(amount: number): string {
   const formatter = new Intl.NumberFormat("en-NG", {
     style: "currency",
-    currency: "NGN",
+    currency: "US",
     minimumFractionDigits: 2,
   });
 
@@ -200,12 +200,12 @@ export const authformSchema = (type: string) =>
     // sign-up form variables
     firstName: type === "sign-in" ? z.string().optional() : z.string().min(4),
     lastName: type === "sign-in" ? z.string().optional() : z.string().min(4),
-    address:
+    address1:
       type === "sign-in" ? z.string().optional() : z.string().min(10).max(60),
-    lga: type === "sign-in" ? z.string().optional() : z.string().min(4),
-    state: type === "sign-in" ? z.string().optional() : z.string().min(4),
-    nin: type === "sign-in" ? z.string().optional() : z.string().min(4),
-    dob: type === "sign-in" ? z.string().optional() : z.string().min(4),
+    postalCode: type === "sign-in" ? z.string().optional() : z.string().min(4),
+    state: type === "sign-in" ? z.string().optional() : z.string().min(2),
+    ssn: type === "sign-in" ? z.string().optional() : z.string().min(4),
+    dateOfBirth: type === "sign-in" ? z.string().optional() : z.string().min(4),
     city: type === "sign-in" ? z.string().optional() : z.string().min(4),
 
     // sign in variables

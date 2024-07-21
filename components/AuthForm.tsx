@@ -56,12 +56,12 @@ const AuthForm = ({ type }: { type: string }) => {
         const userData = {
           firstName: data.firstName!,
           lastName: data.lastName!,
-          address: data.address!,
+          address1: data.address1!,
           city: data.city!,
           state: data.state!,
-          lga: data.lga!,
-          nin: data.nin!,
-          dob: data.dob!,
+          postalCode: data.postalCode!,
+          dateOfBirth: data.dateOfBirth!,
+          ssn: data.ssn!,
           email: data.email,
           password: data.password,
         };
@@ -132,7 +132,7 @@ const AuthForm = ({ type }: { type: string }) => {
                   </div>
                   <CustomInput
                     control={form.control}
-                    name="address"
+                    name="address1"
                     label="Address"
                     placeholder="Enter your address"
                   />
@@ -151,22 +151,22 @@ const AuthForm = ({ type }: { type: string }) => {
                     />
                     <CustomInput
                       control={form.control}
-                      name="lga"
-                      label="LGA"
-                      placeholder="Example: Burutu"
+                      name="postalCode"
+                      label="postal code"
+                      placeholder="Example: 31098"
                     />
                   </div>
                   <div className="flex gap-4">
                     <CustomInput
                       control={form.control}
-                      name="dob"
+                      name="dateOfBirth"
                       label="Date of Birth"
                       placeholder="YYYY-MM-DD"
                     />
                     <CustomInput
                       control={form.control}
-                      name="nin"
-                      label="NIN"
+                      name="ssn"
+                      label="ssn"
                       placeholder="Example: 6572451907"
                     />
                   </div>
